@@ -6,28 +6,35 @@ class CardImage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     //cardImage
-    final cardImage = Container(
-      height: 200,
-      width: 200,
-      margin: EdgeInsets.all(80),
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-            path,
-          ),
-          fit: BoxFit.cover
+    final cardImage = Padding(
+        padding: EdgeInsets.only(
+          top: 100,
+          right: 15,
+          bottom: 30,
+
         ),
-        shape: BoxShape.rectangle,
-        borderRadius: BorderRadius.all(Radius.circular(15)),//da borde a las imagenes
-        boxShadow: <BoxShadow>[
-          BoxShadow(
-            color: Colors.black45,
-            blurRadius: 10,
-            offset: Offset(0,10)
-          )
-        ]//sombra
-      ),
-    );
+        child: Container(
+          //height: 200,
+          width: 200,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(
+                    path,
+                  ),
+                  fit: BoxFit.cover
+              ),
+              shape: BoxShape.rectangle,
+              borderRadius: BorderRadius.all(Radius.circular(15)),//da borde a las imagenes
+              boxShadow: <BoxShadow>[
+                BoxShadow(
+                    color: Colors.black45,
+                    blurRadius: 10,
+                    offset: Offset(0,10)
+                )
+              ]//sombra
+          ),
+        );
+    )
     return cardImage;
   }
 }
