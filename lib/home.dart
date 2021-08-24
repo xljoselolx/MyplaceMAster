@@ -1,7 +1,9 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/card_image.dart';
 import 'package:flutter_app/gradient_back.dart';
+import 'package:flutter_app/home_app_bar.dart';
 import 'package:flutter_app/review.dart';
 import 'package:flutter_app/review_list.dart';
 
@@ -47,7 +49,7 @@ class MyHome extends StatelessWidget {
         children: <Widget>
         [
 
-          GradientBack(),
+          CardImage("assets/images/lugar1.jpg"),
           //listView
         ],
       )
