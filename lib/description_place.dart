@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/rounded_button.dart';
 class DescriptionPlace extends StatelessWidget{
   //variables
   String textoTitulo;
@@ -44,7 +45,7 @@ class DescriptionPlace extends StatelessWidget{
     );
 
     // fila de estrellas
-    List<Container> estrellas = new List();
+    List<Container> estrellas = [];
     for(int i=0; i<5; i++)
     {
       if(i < cantidadEstrellas)
@@ -81,10 +82,11 @@ class DescriptionPlace extends StatelessWidget{
     );
 
     final descriptionPlace = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,//alinea a la izquierda el boton
       children: <Widget>[
         filaTitulo,
-        descripcion
-
+        descripcion,
+        RoundedButton("Navigate")
 
       ],
     );

@@ -33,8 +33,8 @@ class CardImage extends StatelessWidget{
                 )
               ]//sombra
           ),
-        );
-    )
+        ),
+    );
     return cardImage;
   }
 }
