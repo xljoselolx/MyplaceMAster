@@ -29,7 +29,7 @@ class RoundedButton extends StatelessWidget{
       ),
       child: Center(
         child: Text(
-          "",
+          textoBoton,
           style: TextStyle(
             fontFamily: "Lato",
             fontWeight: FontWeight.bold,
